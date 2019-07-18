@@ -1,0 +1,85 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".CheckOutPayment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Matatu E-Wallet Payment"
+            android:textColor="#fff"
+            android:textSize="30sp"
+            android:fontFamily="@font/goboldextra1"/>
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="You can pay for your matatu fare via PAYPALL"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"/>
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+        <ImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:src="@drawable/paypal2"/>
+
+        <EditText
+            android:id="@+id/editAmount"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:digits="+0123456789"
+            android:ems="10"
+            android:hint="Enter Amount"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/moneyicon"
+            />
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+            <Button
+                android:id="@+id/payNow"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Pay Now"
+                android:layout_margin="10dp"
+                android:layout_marginTop="40dp"
+                android:background="@drawable/buttonstylepink"
+                android:textColor="#fff"
+                android:drawableRight="@drawable/ic_arrow_forward_black_24dp"
+                />
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>

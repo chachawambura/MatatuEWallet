@@ -1,0 +1,10 @@
+<?xml version="1.0" encoding="utf-8"?>
+<menu xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <item android:id="@+id/menuProfile" android:title="Profile" android:icon="@drawable/ic_account_box_black_24dp" />
+    <item android:id="@+id/menuPayment" android:title="Payment" android:icon="@drawable/paymenticon" />
+    <item android:id="@+id/menuTripDetails" android:title="Trip Details"  android:icon="@drawable/tripicon" />
+    <item android:id="@+id/menuAccount" android:title="Account" android:icon="@drawable/moneyicon"/>
+    <item android:id="@+id/menuLogout" android:title="Logout" android:icon="@drawable/logout"/>
+
+</menu>

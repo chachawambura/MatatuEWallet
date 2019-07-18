@@ -1,0 +1,150 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    tools:context=".MainActivity">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:background="@color/colorPrimaryDark"
+        android:orientation="vertical"
+        android:padding="20dp">
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:fontFamily="@font/goboldextra1"
+            android:text="@string/matatu_header"
+            android:textColor="@color/white"
+            android:textSize="30sp" />
+
+        <TextView
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="This app allows users to pay for Matatu rides on their mobile devices"
+            android:textColor="#fff"
+            android:textSize="15sp"
+            android:layout_marginTop="25dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+
+            <Button
+                android:background="@drawable/buttonstylepink"
+                android:layout_margin="10dp"
+                android:textColor="#fff"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="Learn More"
+                android:id="@+id/learnMore"/>
+
+            <Button
+                android:background="@drawable/buttonstyle2"
+                android:textColor="#fff"
+                android:layout_margin="10dp"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:text="View The App"
+                android:id="@+id/app-access"/>
+
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:gravity="center"
+        android:orientation="vertical">
+
+
+        <EditText
+            android:id="@+id/editTextPhone"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:digits="+0123456789"
+            android:ems="10"
+            android:hint="Enter Phone Number"
+            android:inputType="phone"
+            android:drawableLeft="@drawable/ic_phone_black_24dp"
+            />
+
+
+        <EditText
+            android:id="@+id/editTextCode"
+            android:layout_width="350dp"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            android:digits="0123456789"
+            android:ems="10"
+            android:hint="Enter Verification Code"
+            android:inputType="number"
+            android:drawableLeft="@drawable/ic_dialpad_black_24dp"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:gravity="center"
+            android:orientation="horizontal"
+            android:layout_marginTop="50dp">
+        <Button
+            android:id="@+id/buttonGetVerificationCode"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="Get Code"
+            android:layout_margin="10dp"
+            android:layout_marginTop="40dp"
+            android:background="@drawable/buttonstylepink"
+            android:textColor="#fff"
+            android:drawableRight="@drawable/ic_dialpad_bk24dp"
+            />
+
+        <Button
+            android:id="@+id/buttonSignIn"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="40dp"
+            android:text="Sign In"
+            android:layout_margin="10dp"
+            android:background="@drawable/buttonstylepink"
+            android:textColor="#fff"
+            android:drawableRight="@drawable/ic_send_black_24dp"
+
+
+            />
+            </LinearLayout>
+
+        <com.google.android.gms.common.SignInButton
+            android:id="@+id/sign_in_button"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_marginTop="8dp"
+            android:layout_marginBottom="8dp"
+            app:layout_constraintBottom_toBottomOf="parent"
+            app:layout_constraintEnd_toEndOf="parent"
+            app:layout_constraintStart_toStartOf="parent"
+            app:layout_constraintTop_toTopOf="parent"
+            app:layout_constraintVertical_bias="0.84"
+            tools:ignore="DuplicateIds,MissingConstraints"
+            />
+
+
+    </LinearLayout>
+
+
+
+
+
+</LinearLayout>
